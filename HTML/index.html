@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人知识分享博客 - Linux、Docker、Nginx、Git、前端、日语学习笔记">
+    <meta name="keywords" content="Linux, Docker, Nginx, Git, Markdown, 前端, 日语学习, 技术博客">
+    <meta name="author" content="奈欢yu">
+    <title>生命不息·学习不止 | 奈欢yu的知识博客</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html" class="logo-link">
+                <img src="../IMAGE/avatar.jpeg" alt="头像" class="avatar">
+                <span class="nickname">奈欢yu</span>
+            </a>
+        </div>
+        <button class="menu-toggle" id="mobileMenuBtn" aria-label="菜单">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#welcome">首页</a></li>
+            <li><a href="topics.html">全部内容</a></li>
+            <li><a href="#goals">项目目标</a></li>
+            <li><a href="#usage">使用方式</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <!-- 欢迎语区域（撑满第一屏） -->
+<section id="welcome" class="welcome-section">
+    <div class="container welcome-content">
+        <h1>生命不息 · 学习不止</h1>
+        <p class="subtitle">个人知识分享博客 · 整理、复习与记录学习内容</p>
+        <div class="divider"></div>
+        <p class="quote">「 愿我们都能在学习中不断进步 」</p>
+        <p class="note">内容仅作个人学习与分享用途</p>
+    </div>
+    <!-- 滚动提示箭头放在里面 -->
+    <div class="scroll-hint" id="scrollHint">
+        <span>探索更多</span>
+        <div class="scroll-arrow">↓</div>
+    </div>
+</section>
+
+    <!-- 精选内容区（只展示部分，点击查看全部跳转） -->
+    <section id="featured" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📚 精选内容</h2>
+                <a href="topics.html" class="view-all">查看全部内容 →</a>
+            </div>
+            <div class="topics-grid" id="featuredGrid">
+                <!-- 精选卡片由JS动态生成（只显示4个） -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 项目目标区 -->
+    <section id="goals" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">✨ 项目目标</h2>
+            </div>
+            <div class="goals-wrapper" id="goalsWrapper">
+                <!-- 目标由JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用方式区 -->
+    <section id="usage" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">🚀 使用方式</h2>
+            </div>
+            <div class="usage-box">
+                <p>📁 直接打开 <code>HTML/</code> 目录中的页面即可浏览内容。</p>
+                <p>📝 如果需要更新或扩展章节，可在对应目录下添加新的学习笔记。</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>感谢你的阅读，愿我们都能在学习中不断进步！</p>
+        <p class="copyright">© 2025 奈欢yu | 知识分享博客 · 个人学习与分享</p>
+    </div>
+</footer>
+
+<!-- 右下角按钮组 -->
+<div class="floating-buttons">
+    <button class="scroll-top" id="scrollTopBtn" aria-label="返回顶部">↑</button>
+    <button class="theme-toggle" id="themeToggle" aria-label="切换暗色模式">🌙</button>
+</div>
+
+<!-- 右侧点状滚动指示器 -->
+<div class="scroll-indicator" id="scrollIndicator">
+    <div class="indicator-dot" data-section="welcome"></div>
+    <div class="indicator-dot" data-section="featured"></div>
+    <div class="indicator-dot" data-section="goals"></div>
+    <div class="indicator-dot" data-section="usage"></div>
+</div>
+
+<script src="../JS/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 系统文件
+Thumbs.db
