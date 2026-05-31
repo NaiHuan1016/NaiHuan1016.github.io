@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第十课：存在・位置・や列举 | 奈欢yu的日语笔记</title>
+    <link rel="stylesheet" href="../../../CSS/style.css">
+    <style>
+        .post-container { max-width: 880px; margin: 0 auto; padding: 2rem 1rem; }
+        .back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--primary); text-decoration: none; }
+        .back-link:hover { text-decoration: underline; }
+        .lesson-header { text-align: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 3px solid #e8b4b4; }
+        .lesson-title { font-size: 2rem; font-weight: 700; color: #c45c5c; }
+        .lesson-sub { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.5rem; }
+        .grammar-card { background: var(--bg-card); border-radius: 20px; padding: 1.5rem; margin-bottom: 1.8rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); border: 1px solid var(--border-card); transition: all 0.2s; }
+        .grammar-card:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+        .grammar-number { display: inline-block; background: #c45c5c; color: white; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.7rem; border-radius: 30px; margin-bottom: 1rem; }
+        .grammar-title { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-primary); border-left: 4px solid #e8b4b4; padding-left: 0.8rem; }
+        .pattern-box { background: var(--bg-usage); padding: 0.8rem 1.2rem; border-radius: 16px; margin: 1rem 0; font-family: monospace; }
+        .jp-text { font-size: 1.2rem; font-weight: 500; color: #c45c5c; }
+        .example { background: var(--bg-usage); padding: 0.8rem 1rem; border-radius: 14px; margin: 0.8rem 0; }
+        .example p { margin: 0.3rem 0; }
+        .jp { font-weight: 600; color: #c45c5c; }
+        .zh { color: var(--text-muted); font-size: 0.9rem; }
+        .note { background: var(--primary-light); padding: 0.6rem 1rem; border-radius: 12px; margin-top: 0.8rem; font-size: 0.85rem; color: var(--text-secondary); border-left: 3px solid var(--primary); }
+        .badge { display: inline-block; background: var(--primary-light); padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.7rem; margin-right: 0.5rem; margin-bottom: 0.5rem; color: var(--primary); }
+        .comparison-grid { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+        .comparison-item { flex: 1; min-width: 200px; background: var(--bg-usage); border-radius: 16px; padding: 1rem; }
+        .comparison-item h4 { color: var(--primary-dark); margin-bottom: 0.5rem; }
+        hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
+        @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="../../../index.html" class="logo-link">
+                <img src="../../../IMAGE/avatar.jpeg" alt="头像" class="avatar">
+                <span class="nickname">奈欢yu</span>
+            </a>
+        </div>
+        <button class="menu-toggle" id="mobileMenuBtn">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../../../index.html">首页</a></li>
+            <li><a href="../../../topics.html">全部内容</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main class="post-container">
+    <a href="index.html" class="back-link">← 返回日语学习列表</a>
+    
+    <div class="lesson-header">
+        <h1 class="lesson-title">📖 みんなの日本語　第十課</h1>
+        <div class="lesson-sub">存在・位置・列举｜あります/います・に・や・など</div>
+    </div>
+
+    <!-- 1. あります / います 的区别 -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ①</div>
+        <div class="grammar-title">あります / います（存在）</div>
+        <div class="comparison-grid">
+            <div class="comparison-item">
+                <h4>📦 あります</h4>
+                <p>用于无生命体征的事物</p>
+                <p><span class="jp">桜があります</span><br>有樱花树</p>
+                <p><span class="jp">公園があります</span><br>有一个公园</p>
+            </div>
+            <div class="comparison-item">
+                <h4>👤 います</h4>
+                <p>用于有生命体征的人/动物</p>
+                <p><span class="jp">男がいます</span><br>有一个男人</p>
+                <p><span class="jp">犬がいます</span><br>有一条狗</p>
+            </div>
+        </div>
+        <div class="note">💡 记住：有生命的用「います」，无生命的用「あります」。</div>
+    </div>
+
+    <!-- 2. 场所 に 名词 が あります/います -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ②</div>
+        <div class="grammar-title">场所 + に + 名词 + が + あります/います</div>
+        <div class="pattern-box"><span class="jp-text">場所 + に + N + がある/いる</span></div>
+        <p><strong>意义</strong>：表示“在（场所）里有（名词）”。存在场所后接「に」。</p>
+        <div class="example">
+            <p><span class="jp">ミラーさんは事務所にいます。</span><span class="zh">→ 米勒先生在事务所里。</span></p>
+            <p><span class="jp">地下に何がありますか。</span><span class="zh">→ 地下有什么？</span></p>
+            <p><span class="jp">レストランがあります。</span><span class="zh">→ 有餐厅。</span></p>
+            <p><span class="jp">受付に誰がいますか。</span><span class="zh">→ 接待处有人吗？</span></p>
+            <p><span class="jp">木村さんがいます。</span><span class="zh">→ 木村先生在。</span></p>
+        </div>
+        <div class="note">💡 疑问词「何」「誰」后接「が」而不是「は」。</div>
+    </div>
+
+    <!-- 3. 名词 は 场所 に あります/います -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ③</div>
+        <div class="grammar-title">名词 + は + 场所 + に + あります/います</div>
+        <div class="pattern-box"><span class="jp-text">N + は + 場所 + にある/いる</span></div>
+        <p><strong>意义</strong>：陈述某物在某处（双方都知道的东西）。</p>
+        <div class="example">
+            <p><span class="jp">東京ディズニーランドは千葉県にあります。</span><span class="zh">→ 东京迪士尼乐园在千叶县。</span></p>
+            <p><span class="jp">東京ディズニーランドはどこですか。</span><span class="zh">→ 东京迪士尼乐园在哪？</span></p>
+            <p><span class="jp">千葉県です。</span><span class="zh">→ 在千叶县。</span></p>
+        </div>
+        <div class="note">💡 也可以用「名词 + は + 场所 + です」来陈述位置。</div>
+    </div>
+
+    <!-- 4. 位置名词 -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ④</div>
+        <div class="grammar-title">名词 + の + 位置名词</div>
+        <div class="pattern-box"><span class="jp-text">N + の + 上/下/前/後ろ/左/右/中/外/隣/間</span></div>
+        <p><strong>意义</strong>：表示方位。位置名词后接「に」表存在场所，接「で」表动作场所。</p>
+        <div class="example">
+            <p><span class="jp">机の上に写真があります。</span><span class="zh">→ 桌子上有照片。</span></p>
+            <p><span class="jp">本屋は花屋とスーパーの間にあります。</span><span class="zh">→ 书店在花店和超市中间。</span></p>
+            <p><span class="jp">駅の近くで友達に会いました。</span><span class="zh">→ 在车站附近遇到了朋友。</span></p>
+        </div>
+        <div class="note">💡 常用方位词：上・下・前・後ろ・左・右・中・外・隣・間・近く</div>
+    </div>
+
+    <!-- 5. や（列举） -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ⑤</div>
+        <div class="grammar-title">や / や～など（列举）</div>
+        <div class="pattern-box"><span class="jp-text">N + や + N + (など)</span></div>
+        <p><strong>意义</strong>：「と」列举全部，「や」选择性列举部分事物。「など」表示“…等”。</p>
+        <div class="example">
+            <p><span class="jp">箱の中に手紙や写真があります。</span><span class="zh">→ 盒子里有信和照片等。</span></p>
+            <p><span class="jp">箱の中に手紙や写真などがあります。</span><span class="zh">→ 盒子里有信、照片什么的。</span></p>
+        </div>
+        <div class="note">💡 「や」暗示还有其他未列举的事物。</div>
+    </div>
+
+    <!-- 6. 重复确认 -->
+    <div class="grammar-card">
+        <div class="grammar-number">文法 ⑥</div>
+        <div class="grammar-title">〜ですか（重复确认）</div>
+        <div class="pattern-box"><span class="jp-text">重复信息 + か</span></div>
+        <p><strong>意义</strong>：重复对方说的话，表示确认。</p>
+        <div class="example">
+            <p><span class="jp">すみません、アジアストアはどこですか。</span><span class="zh">→ 不好意思，亚洲超市在哪？</span></p>
+            <p><span class="jp">アジアストアですか、あのビルの中です。</span><span class="zh">→ 亚洲超市吗？在那栋楼里。</span></p>
+        </div>
+    </div>
+
+    <div class="grammar-card">
+        <div class="grammar-number">📌 第十課 キーワード</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
+            <span class="badge">あります</span><span class="badge">います</span>
+            <span class="badge">上・下・前・後ろ</span><span class="badge">左・右・中・隣</span>
+            <span class="badge">や</span><span class="badge">など</span>
+        </div>
+        <hr>
+        <p style="font-size: 0.85rem;">📖 语法核心：ある/いる区别・存在句・方位词・や列举・重复确认</p>
+    </div>
+</main>
+
+<footer class="footer"><div class="container"><p>感谢阅读，愿我们都能在学习中不断进步！</p><p class="copyright">© 2025 奈欢yu | 知识分享博客</p></div></footer>
+<div class="floating-buttons"><button class="scroll-top" id="scrollTopBtn">↑</button><button class="theme-toggle" id="themeToggle">🌙</button></div>
+<script src="../../../JS/main.js"></script>
+</body>
+</html>
