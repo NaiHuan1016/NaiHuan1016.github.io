@@ -22,8 +22,10 @@
         { emoji: "🤝", title: "分享技巧", text: "分享实用技巧和规范写法，共同进步" }
     ];
 
-    // 精选内容（主页只显示前4个）
-    const featuredData = topicsData.slice(0, 4);
+    // 精选内容（日语学习固定显示，其他按顺序取前3个）
+    const japaneseTopic = topicsData.find(item => item.name === "日语学习");
+    const otherTopics = topicsData.filter(item => item.name !== "日语学习").slice(0, 3);
+    const featuredData = japaneseTopic ? [japaneseTopic, ...otherTopics] : topicsData.slice(0, 4);
 
     // 格式化日期
     function formatDate(dateStr) {
