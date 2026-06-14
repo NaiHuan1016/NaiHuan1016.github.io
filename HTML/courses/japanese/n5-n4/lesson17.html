@@ -31,6 +31,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .verb-table { font-size: 0.75rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -59,7 +63,7 @@
     </div>
 
     <!-- 1. 动词ない形 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">动词ない形</div>
         <p>动词ない形的变化规则（从ます形变化）：</p>
@@ -80,7 +84,7 @@
     </div>
 
     <!-- 2. ないでください -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词ない形 + ないでください</div>
         <div class="pattern-box"><span class="jp-text">Vないでください</span></div>
@@ -91,7 +95,7 @@
     </div>
 
     <!-- 3. なければなりません -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">动词ない形 + なければなりません</div>
         <div class="pattern-box"><span class="jp-text">Vなければなりません</span></div>
@@ -103,7 +107,7 @@
     </div>
 
     <!-- 4. なくてもいいです -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">动词ない形 + なくてもいいです</div>
         <div class="pattern-box"><span class="jp-text">Vなくてもいいです</span></div>
@@ -114,7 +118,7 @@
     </div>
 
     <!-- 5. 宾语主题化 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">宾语主题化（を → は）</div>
         <div class="pattern-box"><span class="jp-text">を → は</span></div>
@@ -126,7 +130,7 @@
     </div>
 
     <!-- 6. までに / まで -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">名词(时间) + までに / まで + 动词</div>
         <div class="pattern-box"><span class="jp-text">時間 + までに / まで + V</span></div>
@@ -138,7 +142,7 @@
         <div class="note">💡 瞬间完成的动作用「までに」，持续完成的动作用「まで」。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十七課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">ないでください</span><span class="badge">なければなりません</span>
@@ -185,6 +189,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

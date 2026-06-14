@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } th, td { padding: 0.4rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. 名词 が 好き/わかります/あります -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词 + が + 好き / わかります / あります</div>
         <div class="pattern-box"><span class="jp-text">N + が + 好き / わかる / ある</span></div>
@@ -72,7 +76,7 @@
     </div>
 
     <!-- 2. どんな -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">どんな + 名词</div>
         <div class="pattern-box"><span class="jp-text">どんな + N</span></div>
@@ -84,7 +88,7 @@
     </div>
 
     <!-- 3. 程度/数量副词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">程度 / 数量副词</div>
         <table>
@@ -105,7 +109,7 @@
     </div>
 
     <!-- 4. 〜から〜（原因） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">〜から、〜</div>
         <div class="pattern-box"><span class="jp-text">原因 + から + 結果</span></div>
@@ -119,7 +123,7 @@
     </div>
 
     <!-- 5. どうして -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">どうして（为什么）</div>
         <div class="pattern-box"><span class="jp-text">どうして + 疑問文</span></div>
@@ -133,7 +137,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第九課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">好き</span><span class="badge">嫌い</span><span class="badge">わかります</span>
@@ -183,6 +187,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

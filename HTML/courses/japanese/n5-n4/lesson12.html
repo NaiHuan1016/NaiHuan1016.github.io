@@ -33,6 +33,10 @@
         .comparison-item h4 { color: var(--primary-dark); margin-bottom: 0.5rem; }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } th, td { padding: 0.4rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -61,7 +65,7 @@
     </div>
 
     <!-- 1. な形容词的时态 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">な形容词的时态</div>
         <table>
@@ -79,7 +83,7 @@
     </div>
 
     <!-- 2. い形容词的时态 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">い形容词的时态</div>
         <table>
@@ -97,7 +101,7 @@
     </div>
 
     <!-- 3. 比较句 A > B -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">A + は + B + より + 形容词</div>
         <div class="pattern-box"><span class="jp-text">AはBより形容词です</span></div>
@@ -108,7 +112,7 @@
     </div>
 
     <!-- 4. 选择疑问比较 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">比较疑问句</div>
         <div class="pattern-box">
@@ -123,7 +127,7 @@
     </div>
 
     <!-- 5. 最高级 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">范围 + で + 疑问词 + が + 一番 + 形容词</div>
         <div class="pattern-box"><span class="jp-text">範囲 + で + 何/どこ/誰 + が一番 + 形容词ですか</span></div>
@@ -135,7 +139,7 @@
     </div>
 
     <!-- 6. 形容词的の -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">形容词 + の（代替名词）</div>
         <div class="pattern-box"><span class="jp-text">形容词 + の</span></div>
@@ -147,7 +151,7 @@
         <div class="note">💡 类似于之前学过的「の」代替名词，但这里是形容词修饰。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十二課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">雨でした</span><span class="badge">静かでした</span>
@@ -196,6 +200,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

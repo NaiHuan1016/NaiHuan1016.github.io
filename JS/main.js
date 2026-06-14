@@ -94,10 +94,24 @@
         const toggleBtn = document.getElementById('themeToggle');
         if (theme === 'dark') {
             html.setAttribute('data-theme', 'dark');
-            if (toggleBtn) toggleBtn.textContent = '☀️';
+            if (toggleBtn) {
+            toggleBtn.style.transform = 'rotate(0deg)';
+            toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+            toggleBtn.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                if (toggleBtn) toggleBtn.style.transform = '';
+            }, 300);
+        }
         } else {
             html.setAttribute('data-theme', 'light');
-            if (toggleBtn) toggleBtn.textContent = '🌙';
+            if (toggleBtn) {
+            toggleBtn.style.transform = 'rotate(0deg)';
+            toggleBtn.textContent = theme === 'dark' ? '☀️' : '🌙';
+            toggleBtn.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                if (toggleBtn) toggleBtn.style.transform = '';
+            }, 300);
+        }
         }
         localStorage.setItem(THEME_KEY, theme);
     }

@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. て形 + います（结果状态） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">动词て形 + います（结果状态持续）</div>
         <div class="pattern-box"><span class="jp-text">Vています（結果状態）</span></div>
@@ -67,7 +71,7 @@
     </div>
 
     <!-- 2. てしまいました -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词て形 + しまいました / しまいます（完成）</div>
         <div class="pattern-box"><span class="jp-text">Vてしまいました（已完成）/ Vてしまいます（将来完成）</span></div>
@@ -80,7 +84,7 @@
     </div>
 
     <!-- 3. に（方向） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词(场所) + に + 行きます / 来ます / 帰ります</div>
         <div class="pattern-box"><span class="jp-text">場所 + に + 移動動詞</span></div>
@@ -92,7 +96,7 @@
     </div>
 
     <!-- 4. それ／その／そう -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">それ / その / そう（指代内容）</div>
         <div class="pattern-box"><span class="jp-text">それ / その + N / そう</span></div>
@@ -104,7 +108,7 @@
     </div>
 
     <!-- 5. ありました -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">ありました（找到了/有了）</div>
         <div class="pattern-box"><span class="jp-text">(Nが) ありました</span></div>
@@ -116,7 +120,7 @@
     </div>
 
     <!-- 6. どこかで / どこかに -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">どこかで / どこかに</div>
         <div class="pattern-box"><span class="jp-text">どこかで / どこかに</span></div>
@@ -128,7 +132,7 @@
         <div class="note">💡 「どこかへ」「どこかを」可以省略为「どこか」；但「どこかで」「どこかに」必须保留助词。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十九課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">ています（結果）</span><span class="badge">てしまう</span>
@@ -176,6 +180,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

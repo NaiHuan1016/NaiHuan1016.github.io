@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. あります / います 的区别 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">あります / います（存在）</div>
         <div class="comparison-grid">
@@ -79,7 +83,7 @@
     </div>
 
     <!-- 2. 场所 に 名词 が あります/います -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">场所 + に + 名词 + が + あります/います</div>
         <div class="pattern-box"><span class="jp-text">場所 + に + N + がある/いる</span></div>
@@ -95,7 +99,7 @@
     </div>
 
     <!-- 3. 名词 は 场所 に あります/います -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词 + は + 场所 + に + あります/います</div>
         <div class="pattern-box"><span class="jp-text">N + は + 場所 + にある/いる</span></div>
@@ -109,7 +113,7 @@
     </div>
 
     <!-- 4. 位置名词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词 + の + 位置名词</div>
         <div class="pattern-box"><span class="jp-text">N + の + 上/下/前/後ろ/左/右/中/外/隣/間</span></div>
@@ -123,7 +127,7 @@
     </div>
 
     <!-- 5. や（列举） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">や / や～など（列举）</div>
         <div class="pattern-box"><span class="jp-text">N + や + N + (など)</span></div>
@@ -136,7 +140,7 @@
     </div>
 
     <!-- 6. 重复确认 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">〜ですか（重复确认）</div>
         <div class="pattern-box"><span class="jp-text">重复信息 + か</span></div>
@@ -147,7 +151,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">あります</span><span class="badge">います</span>
@@ -195,6 +199,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

@@ -31,6 +31,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .verb-table { font-size: 0.75rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -59,7 +63,7 @@
     </div>
 
     <!-- 1. 动词た形 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">动词た形</div>
         <p>动词た形的变化规则（与て形类似，将「て」→「た」、「で」→「だ」）：</p>
@@ -84,7 +88,7 @@
     </div>
 
     <!-- 2. たことがあります -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词た形 + ことがあります</div>
         <div class="pattern-box"><span class="jp-text">Vたことがあります</span></div>
@@ -96,7 +100,7 @@
     </div>
 
     <!-- 3. たり～たりします -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">动词た形り、动词た形り + します</div>
         <div class="pattern-box"><span class="jp-text">Vたり、Vたりします</span></div>
@@ -109,7 +113,7 @@
     </div>
 
     <!-- 4. くなる/になる -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">い形容词 / な形容词 / 名词 + なります</div>
         <div class="pattern-box">
@@ -125,7 +129,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十九課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">た形</span><span class="badge">たことがある</span>
@@ -172,6 +176,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

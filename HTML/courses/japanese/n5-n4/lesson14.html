@@ -31,6 +31,10 @@
         .mindmap-img { max-width: 100%; margin: 1rem 0; border-radius: 16px; box-shadow: var(--shadow-md); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .verb-table { font-size: 0.75rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -59,7 +63,7 @@
     </div>
 
     <!-- 1. 动词的类型 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">动词的分类</div>
         <p>日语动词分为三类：</p>
@@ -78,7 +82,7 @@
     </div>
 
     <!-- 2. 动词て形（简要规则） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词て形</div>
         <p><strong>变化规则</strong>：</p>
@@ -103,7 +107,7 @@
     </div>
 
     <!-- 3. 动词て形 + ください -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">动词て形 + ください</div>
         <div class="pattern-box"><span class="jp-text">Vてください</span></div>
@@ -116,7 +120,7 @@
     </div>
 
     <!-- 4. 动词て形 + います -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">动词て形 + います</div>
         <div class="pattern-box"><span class="jp-text">Vています</span></div>
@@ -130,7 +134,7 @@
     </div>
 
     <!-- 5. 动词ます形 + ましょうか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">动词ます形 + ましょうか</div>
         <div class="pattern-box"><span class="jp-text">Vましょうか</span></div>
@@ -142,7 +146,7 @@
     </div>
 
     <!-- 6. 名词が动词（客观描述） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">名词 + が + 动词（客观描述）</div>
         <p><strong>意义</strong>：描述五官感受或客观传达某事时，主语用「が」表示。</p>
@@ -154,7 +158,7 @@
     </div>
 
     <!-- 7. すみませんが -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">すみませんが / 失礼ですが</div>
         <p><strong>意义</strong>：这里的「が」无实际意义，作为语气词，用于引出话题或请求。</p>
@@ -164,7 +168,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十四課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">Ⅰ類動詞</span><span class="badge">Ⅱ類動詞</span><span class="badge">Ⅲ類動詞</span>
@@ -212,6 +216,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

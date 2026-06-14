@@ -31,6 +31,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } th, td { padding: 0.4rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -66,7 +70,7 @@
    
 
     <!-- 1. 形容词分类 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">形容词的分类</div>
         <p>日语形容词分为两类：<strong>な形容词</strong>（形容动词）和 <strong>い形容词</strong>（形容词）。</p>
@@ -81,7 +85,7 @@
     </div>
 
     <!-- 2. 谓语句（です/じゃありません） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">形容词作谓语</div>
         <table>
@@ -101,7 +105,7 @@
     </div>
 
     <!-- 3. 形容词修饰名词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">形容词修饰名词</div>
         <div class="pattern-box">
@@ -115,7 +119,7 @@
     </div>
 
     <!-- 4. が（转折） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">〜が、〜（转折）</div>
         <div class="pattern-box"><span class="jp-text">〜が、〜</span></div>
@@ -126,7 +130,7 @@
     </div>
 
     <!-- 5. とても / あまり -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">とても / あまり</div>
         <div class="pattern-box">
@@ -140,7 +144,7 @@
     </div>
 
     <!-- 6. 名词 は どうですか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">〜はどうですか</div>
         <div class="pattern-box"><span class="jp-text">N + はどうですか</span></div>
@@ -152,7 +156,7 @@
     </div>
 
     <!-- 7. どんな -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">どんな + 名词</div>
         <div class="pattern-box"><span class="jp-text">どんな + N + ですか</span></div>
@@ -164,7 +168,7 @@
     </div>
 
     <!-- 8. そうですね（思考时） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑧</div>
         <div class="grammar-title">そうですね（思考中）</div>
         <p><strong>意义</strong>：表示说话人正在思考对方的问题（与第五课的认同用法不同）。</p>
@@ -175,7 +179,7 @@
         <div class="note">💡 区别：第五课的「そうですね」表示认同（是啊）；这一课表示思考（嗯…让我想想）。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第八課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">親切</span><span class="badge">静か</span><span class="badge">賑やか</span>
@@ -224,6 +228,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. て形顿挫接续 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">て形顿挫接续</div>
         <p><strong>意义</strong>：当有两个以上的句子时，使用て形进行分割接续。</p>
@@ -85,7 +89,7 @@
     </div>
 
     <!-- 2. 动词て形 + から + 动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词て形 + から + 动词</div>
         <div class="pattern-box"><span class="jp-text">Vてから、V</span></div>
@@ -99,7 +103,7 @@
     </div>
 
     <!-- 3. 名词は名词が形容词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词 + は + 名词 + が + 形容词</div>
         <div class="pattern-box"><span class="jp-text">N1は N2が 形容詞</span></div>
@@ -110,7 +114,7 @@
     </div>
 
     <!-- 4. 名词を动词（离开场所） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词 + を + 动词（离开场所）</div>
         <div class="pattern-box"><span class="jp-text">場所 + を + 移動動詞</span></div>
@@ -122,7 +126,7 @@
     </div>
 
     <!-- 5. どうやって -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">どうやって（询问方式/问路）</div>
         <div class="pattern-box"><span class="jp-text">どうやって + Vますか</span></div>
@@ -134,7 +138,7 @@
     </div>
 
     <!-- 6. どれ / どの名词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">どれ / どの + 名词</div>
         <div class="pattern-box"><span class="jp-text">どれ / どのN</span></div>
@@ -145,7 +149,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十六課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">て形接続</span><span class="badge">くて</span><span class="badge">で</span>
@@ -193,6 +197,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

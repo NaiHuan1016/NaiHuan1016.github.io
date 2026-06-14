@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. こ/そ/あ/ど 系列 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">こ・そ・あ・ど 系列</div>
         <table>
@@ -74,7 +78,7 @@
     </div>
 
     <!-- 2. そうです / 違います -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">そうです / 違います</div>
         <p><strong>意义</strong>：用于回答疑问句时的肯定/否定。</p>
@@ -85,7 +89,7 @@
     </div>
 
     <!-- 3. ～か、～か -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">～か + ～か（选择疑问）</div>
         <div class="pattern-box"><span class="jp-text">〜か、〜か</span></div>
@@ -96,7 +100,7 @@
     </div>
 
     <!-- 4. 名词Aの名词B -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词A + の + 名词B（所属）</div>
         <div class="pattern-box"><span class="jp-text">N1 の N2</span></div>
@@ -105,7 +109,7 @@
     </div>
 
     <!-- 5. 作为名词使用的の -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">作为名词使用的「の」</div>
         <p><strong>意义</strong>：「の」可以代替前面出现过所属关系的名词。</p>
@@ -117,7 +121,7 @@
     </div>
 
     <!-- 6. 敬语接头词お -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">敬语接头词「お」</div>
         <p><strong>意义</strong>：放在名词前表示尊敬，使语言更礼貌。</p>
@@ -127,14 +131,14 @@
     </div>
 
     <!-- 7. そうですか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">そうですか</div>
         <p><strong>意义</strong>：表示「了解了」「这样啊」，句尾为降调。</p>
         <div class="example"><p><span class="jp">そうですか。</span><span class="zh">→ 这样啊。</span></p></div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">辞書</span><span class="badge">ノート</span><span class="badge">手帳</span>
@@ -180,6 +184,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

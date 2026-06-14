@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. こ/そ/あ/ど 场所/方向 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">こ・そ・あ・ど 系列（场所/方向）</div>
         <table>
@@ -72,7 +76,7 @@
     </div>
 
     <!-- 2. 名词は场所です -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">名词 + は + 场所 + です</div>
         <div class="pattern-box"><span class="jp-text">N は 場所 です</span></div>
@@ -81,7 +85,7 @@
     </div>
 
     <!-- 3. どこ・どちら -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">どこ / どちら（疑问词）</div>
         <p><strong>意义</strong>：「どこ」用于询问场所，「どちら」用于询问方向（更礼貌）。</p>
@@ -92,7 +96,7 @@
     </div>
 
     <!-- 4. どこの～ですか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">どこの + N + ですか（产地询问）</div>
         <div class="pattern-box"><span class="jp-text">これはどこの N ですか</span></div>
@@ -103,7 +107,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第三課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">ここ</span><span class="badge">そこ</span><span class="badge">あそこ</span><span class="badge">どこ</span>
@@ -150,6 +154,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

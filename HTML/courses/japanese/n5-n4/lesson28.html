@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. ながら -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">动词ます形 + ながら + 动词</div>
         <div class="pattern-box"><span class="jp-text">Vます + ながら、V</span></div>
@@ -66,7 +70,7 @@
     </div>
 
     <!-- 2. ていました -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词て形 + います / いました（习惯・反复）</div>
         <div class="pattern-box"><span class="jp-text">Vています / Vていました</span></div>
@@ -78,7 +82,7 @@
     </div>
 
     <!-- 3. し -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">普通形 + し、普通形 + し</div>
         <div class="pattern-box"><span class="jp-text">普通形 + し、普通形 + し</span></div>
@@ -90,7 +94,7 @@
     </div>
 
     <!-- 4. それで / それに -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">それで / それに</div>
         <div class="pattern-box">
@@ -104,7 +108,7 @@
     </div>
 
     <!-- 5. とき + 助词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">〜とき + 助詞</div>
         <div class="pattern-box"><span class="jp-text">〜とき + は / に / の / など</span></div>
@@ -115,7 +119,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十八課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">ながら</span><span class="badge">ています</span>
@@ -163,6 +167,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

@@ -142,6 +142,10 @@
             th, td { padding: 0.4rem; font-size: 0.8rem; }
         }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -170,7 +174,7 @@
     </div>
 
     <!-- 1. 今～時～分です -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">今～時～分です</div>
         <div class="pattern-box">
@@ -188,7 +192,7 @@
     </div>
 
     <!-- 2. 动词ます形（时态表） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词ます形（時態）</div>
         <p><strong>意义</strong>：动词的敬体形，表礼貌。</p>
@@ -211,7 +215,7 @@
     </div>
 
     <!-- 3. 名词(时间) に 动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词(时间) + に + 动词</div>
         <div class="pattern-box">
@@ -229,7 +233,7 @@
     </div>
 
     <!-- 4. 名词 から 名词 まで -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词 + から + 名词 + まで</div>
         <div class="pattern-box">
@@ -247,7 +251,7 @@
     </div>
 
     <!-- 5. 名词 と 名词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">名词 + と + 名词</div>
         <div class="pattern-box">
@@ -261,7 +265,7 @@
     </div>
 
     <!-- 6. 助词ね -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">助词「ね」</div>
         <div class="pattern-box">
@@ -279,7 +283,7 @@
     </div>
 
     <!-- 补充：时间相关词汇 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第四課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">起きます (おきます)</span>
@@ -341,6 +345,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

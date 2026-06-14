@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. 名词(场所) へ 行きます/来ます/帰ります -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词(场所) + へ + 行きます / 来ます / 帰ります</div>
         <div class="pattern-box"><span class="jp-text">場所 + へ + 移動動詞</span></div>
@@ -69,7 +73,7 @@
     </div>
 
     <!-- 2. どこも行きません（绝对否定） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">疑问词 + も + 否定</div>
         <div class="pattern-box"><span class="jp-text">どこも / 何も + 否定</span></div>
@@ -82,7 +86,7 @@
     </div>
 
     <!-- 3. 名词(交通工具) で 行きます -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词(交通工具) + で + 行きます / 来ます / 帰ります</div>
         <div class="pattern-box"><span class="jp-text">乗り物 + で + 移動動詞</span></div>
@@ -96,7 +100,7 @@
     </div>
 
     <!-- 4. 名词(人/动物) と 动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词(人/动物) + と + 动词</div>
         <div class="pattern-box"><span class="jp-text">人/動物 + と + 動詞</span></div>
@@ -109,7 +113,7 @@
     </div>
 
     <!-- 5. いつ -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">いつ</div>
         <div class="pattern-box"><span class="jp-text">いつ + 动词ますか</span></div>
@@ -120,7 +124,7 @@
     </div>
 
     <!-- 6. ～よ -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">助词「よ」</div>
         <div class="pattern-box"><span class="jp-text">～よ</span></div>
@@ -131,7 +135,7 @@
     </div>
 
     <!-- 7. そうですね -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">そうですね</div>
         <div class="pattern-box"><span class="jp-text">そうですね</span></div>
@@ -143,7 +147,7 @@
         <div class="note">💡 区别于思考时的「そうですね」（嗯……让我想想）。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第五課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">行きます</span><span class="badge">来ます</span><span class="badge">帰ります</span>
@@ -190,6 +194,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

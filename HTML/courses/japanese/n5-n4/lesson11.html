@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } th, td { padding: 0.4rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. 量词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">量词</div>
         <p><strong>意义</strong>：量词直接接在数字后面使用。根据计数对象不同，使用的量词也不同。</p>
@@ -73,7 +77,7 @@
     </div>
 
     <!-- 2. 量词的用法 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">量词的用法</div>
         <p><strong>意义</strong>：量词原则上放在「名词 + 助词」的后面。表示频率/基准时，量词中间加「に」。</p>
@@ -83,7 +87,7 @@
     </div>
 
     <!-- 3. どのぐらい -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">どのぐらい（询问时间长短）</div>
         <div class="pattern-box"><span class="jp-text">どのぐらい + Vましたか</span></div>
@@ -94,7 +98,7 @@
     </div>
 
     <!-- 4. 数量词(期间) + に + 量词 + 动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">数量词(期间) + に + 量词 + 动词</div>
         <div class="pattern-box"><span class="jp-text">期間 + に + 回数 + 動詞</span></div>
@@ -105,7 +109,7 @@
     </div>
 
     <!-- 5. ~ぐらい -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">〜ぐらい（大约/大概）</div>
         <div class="pattern-box"><span class="jp-text">数量詞 + ぐらい</span></div>
@@ -115,7 +119,7 @@
     </div>
 
     <!-- 6. だけ -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">量词/名词 + だけ（限定）</div>
         <div class="pattern-box"><span class="jp-text">N/数量詞 + だけ</span></div>
@@ -126,7 +130,7 @@
         <div class="note">💡 「だけ」接在量词或名词后面，表示限定。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第十一課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">いくつ</span><span class="badge">どのぐらい</span><span class="badge">一週間</span>
@@ -173,6 +177,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

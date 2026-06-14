@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. とき（时间） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">普通形 + とき、〜</div>
         <div class="pattern-box"><span class="jp-text">V辞書形/Vない形/い形容詞/な形容詞な/名詞の + とき</span></div>
@@ -71,7 +75,7 @@
     </div>
 
     <!-- 2. 辞书形/た形 + とき（时态区别） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">辞书形 vs た形 + とき</div>
         <div class="comparison-grid">
@@ -90,7 +94,7 @@
     </div>
 
     <!-- 3. と（一...就...） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">动词辞书形 + と + 主句</div>
         <div class="pattern-box"><span class="jp-text">V辞書形 + と</span></div>
@@ -103,7 +107,7 @@
     </div>
 
     <!-- 4. 名词 が 形容词（客观描述） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词 + が + 形容词（客观现象）</div>
         <div class="pattern-box"><span class="jp-text">N + が + 形容詞</span></div>
@@ -115,7 +119,7 @@
     </div>
 
     <!-- 5. 名词 を 移动动词（经由） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">名词 + を + 移动动词（经由场所）</div>
         <div class="pattern-box"><span class="jp-text">場所 + を + 移動動詞</span></div>
@@ -127,7 +131,7 @@
         <div class="note">💡 区别：第4课「〜に〜をあげる」的对象を，第16课「〜を出ます」的离开を，这里是经由を。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十三課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">とき</span><span class="badge">辞書形+とき</span>
@@ -175,6 +179,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

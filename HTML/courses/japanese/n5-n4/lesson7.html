@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. 名词(工具/手段) で 动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词(工具/手段) + で + 动词</div>
         <div class="pattern-box"><span class="jp-text">道具/手段 + で + 動詞</span></div>
@@ -71,7 +75,7 @@
     </div>
 
     <!-- 2. 词/句 は ～ごで何ですか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">词/句 + は + ～ごで + 何ですか</div>
         <div class="pattern-box"><span class="jp-text">～は日本語で何ですか</span></div>
@@ -83,7 +87,7 @@
     </div>
 
     <!-- 3. 名词(人) に 名词 を あげます/貸します/教えます -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">～に～をあげます / 貸します / 教えます</div>
         <div class="pattern-box"><span class="jp-text">相手 + に + 物/情報 + を + あげる/貸す/教える</span></div>
@@ -97,7 +101,7 @@
     </div>
 
     <!-- 4. 名词(人) に 名词 を もらいます/借ります/習います -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">～に～をもらいます / 借ります / 習います</div>
         <div class="pattern-box"><span class="jp-text">相手 + に + 物/情報 + を + もらう/借りる/習う</span></div>
@@ -111,7 +115,7 @@
     </div>
 
     <!-- 5. もう 动词ます形 ました -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">もう + 动词ます形 + ました</div>
         <div class="pattern-box"><span class="jp-text">もう + Vました</span></div>
@@ -125,7 +129,7 @@
     </div>
 
     <!-- 6. 助词省略 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">助词省略</div>
         <p><strong>意义</strong>：在对话中，当前后文能明确语义时，可以省略助词。</p>
@@ -137,7 +141,7 @@
     </div>
 
     <!-- 对比总结 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第七課 対比</div>
         <div class="comparison-grid">
             <div class="comparison-item">
@@ -194,6 +198,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

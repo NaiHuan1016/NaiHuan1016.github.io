@@ -64,6 +64,10 @@
             .article-item { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
         }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -149,7 +153,7 @@
         let html = '';
         japaneseArticles.forEach(article => {
             html += `
-                <div class="article-item" data-link="${article.link}">
+                <div class="article-item animate__animated animate__fadeInUp" data-aos="fade-up" data-link="${article.link}">
                     <div class="article-info">
                         <h3>📖 ${article.title}</h3>
                         <p>${article.desc}</p>
@@ -168,5 +172,13 @@
     }
     renderArticleList();
 </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>

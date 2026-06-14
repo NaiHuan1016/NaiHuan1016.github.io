@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. 名词修饰句节 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词修饰句节（連体修飾節）</div>
         <div class="pattern-box"><span class="jp-text">普通形 + 名词</span></div>
@@ -68,7 +72,7 @@
     </div>
 
     <!-- 2. 动词辞书形 + 時間/約束/用事 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">动词辞书形 + 時間 / 約束 / 用事</div>
         <div class="pattern-box"><span class="jp-text">V辞書形 + 時間 / 約束 / 用事 + が + あります</span></div>
@@ -81,7 +85,7 @@
     </div>
 
     <!-- 3. 动词ます形 + ましょうか（提议） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">动词ます形 + ましょうか（一起做）</div>
         <div class="pattern-box"><span class="jp-text">Vましょうか</span></div>
@@ -93,7 +97,7 @@
         <div class="note">💡 与第14课的「ましょうか」（主动提议帮助）不同，这里是一起做。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十二課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">連体修飾節</span><span class="badge">時間</span>
@@ -141,6 +145,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

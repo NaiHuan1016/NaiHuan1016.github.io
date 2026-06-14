@@ -33,6 +33,10 @@
         .comparison-item h4 { color: var(--primary-dark); margin-bottom: 0.5rem; }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .verb-table { font-size: 0.75rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -61,7 +65,7 @@
     </div>
 
     <!-- 1. 可能形的变化规则 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">可能形的变化规则</div>
         <p>可能形表示“能够做某事”（能力或可能性）。</p>
@@ -79,7 +83,7 @@
     </div>
 
     <!-- 2. 可能形的使用 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">可能形的使用</div>
         <div class="pattern-box"><span class="jp-text">N + が + V(可能形)</span></div>
@@ -92,7 +96,7 @@
     </div>
 
     <!-- 3. 見えます vs 聞こえます -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">見えます・聞こえます</div>
         <p><strong>意义</strong>：表示非主动、自然而然地看到/听到，助词用「が」。</p>
@@ -112,7 +116,7 @@
     </div>
 
     <!-- 4. できます（产生/完成） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">できます（产生/完成）</div>
         <div class="pattern-box"><span class="jp-text">N + が + できます</span></div>
@@ -123,7 +127,7 @@
     </div>
 
     <!-- 5. しか（仅仅） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">しか</div>
         <div class="pattern-box"><span class="jp-text">N + しか + 否定</span></div>
@@ -136,7 +140,7 @@
     </div>
 
     <!-- 6. は（对比） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">は（对比）</div>
         <div class="pattern-box"><span class="jp-text">Nは...が、Nは...</span></div>
@@ -147,7 +151,7 @@
     </div>
 
     <!-- 7. 提示带有助词的词语的は -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">提示带有助词的词语的「は」</div>
         <div class="pattern-box"><span class="jp-text">（が/を）→ は / （其他助词）+ は</span></div>
@@ -159,7 +163,7 @@
         <div class="note">💡 接续「が」和「を」的名词时去掉「が/を」；接续其他助词时直接在助词后接「は」。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十七課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">可能形</span><span class="badge">話せます</span><span class="badge">読めます</span>
@@ -207,6 +211,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

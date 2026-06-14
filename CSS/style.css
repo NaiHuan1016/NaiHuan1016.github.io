@@ -1018,3 +1018,21 @@ body {
         justify-content: center;
     }
 }
+/* 点击微反馈 */
+.topic-card:active,
+.article-item:active,
+.grammar-card:active,
+.nav-links a:active,
+.logo-link:active,
+.view-all:active,
+.back-link:active,
+.prev-lesson:active,
+.next-lesson:active,
+.back-to-list:active {
+    transform: scale(0.98);
+    transition: transform 0.05s ease;
+}
+/* 暗色模式图标旋转动画 */
+.theme-toggle {
+    transition: transform 0.3s ease;
+}

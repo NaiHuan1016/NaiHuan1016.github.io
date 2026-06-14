@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. 名词を动词(他动词) -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词 + を + 动词（他动词）</div>
         <div class="pattern-box"><span class="jp-text">N + を + 他動詞</span></div>
@@ -68,7 +72,7 @@
     </div>
 
     <!-- 2. 名词をします -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">名词 + をします</div>
         <div class="pattern-box"><span class="jp-text">N + をします</span></div>
@@ -81,7 +85,7 @@
     </div>
 
     <!-- 3. 何をしますか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">何をしますか</div>
         <div class="pattern-box"><span class="jp-text">何をしますか</span></div>
@@ -92,7 +96,7 @@
     </div>
 
     <!-- 4. なに 和 なん -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">なに / なん</div>
         <p><strong>意义</strong>：「何」的两种读法。</p>
@@ -104,7 +108,7 @@
     </div>
 
     <!-- 5. 名词(场所)で动词 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">名词(场所) + で + 动词</div>
         <div class="pattern-box"><span class="jp-text">場所 + で + 動詞</span></div>
@@ -117,7 +121,7 @@
     </div>
 
     <!-- 6. 动词ます形ませんか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">动词ます形ませんか（邀请）</div>
         <div class="pattern-box"><span class="jp-text">Vませんか</span></div>
@@ -129,7 +133,7 @@
     </div>
 
     <!-- 7. 动词ます形ましょう -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑦</div>
         <div class="grammar-title">动词ます形ましょう（提议/回应）</div>
         <div class="pattern-box"><span class="jp-text">Vましょう</span></div>
@@ -142,7 +146,7 @@
     </div>
 
     <!-- 8. ～か（确认新信息） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑧</div>
         <div class="grammar-title">～か（重复确认）</div>
         <div class="pattern-box"><span class="jp-text">重复信息 + か</span></div>
@@ -153,7 +157,7 @@
         </div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第六課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">飲みます</span><span class="badge">読みます</span><span class="badge">見ます</span>
@@ -200,6 +204,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

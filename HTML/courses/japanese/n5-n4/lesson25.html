@@ -30,6 +30,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } .comparison-grid { flex-direction: column; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -58,7 +62,7 @@
     </div>
 
     <!-- 1. たら（假设） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">た形 + ら、〜</div>
         <div class="pattern-box"><span class="jp-text">Vた形/い形〜かった/な形〜だった/名詞だった + ら</span></div>
@@ -72,7 +76,7 @@
     </div>
 
     <!-- 2. た形+ら（顺序） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">た形 + ら（〜之后）</div>
         <div class="pattern-box"><span class="jp-text">Vた形 + ら</span></div>
@@ -85,7 +89,7 @@
     </div>
 
     <!-- 3. ても（即使） -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">て形 / なくて / くて / で + も</div>
         <div class="pattern-box"><span class="jp-text">Vて/い形〜くて/な形〜で/名詞で + も</span></div>
@@ -98,7 +102,7 @@
     </div>
 
     <!-- 4. もし -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">もし</div>
         <div class="pattern-box"><span class="jp-text">もし + 条件句</span></div>
@@ -109,7 +113,7 @@
     </div>
 
     <!-- 5. 从属句中的主语 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">从属句中的主语</div>
         <div class="pattern-box"><span class="jp-text">〜たら / 〜ても + 主語は/が</span></div>
@@ -121,7 +125,7 @@
         <div class="note">💡 从属句中的主语用「が」是书面/正式用法。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第二十五課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">たら</span><span class="badge">た形+ら</span>
@@ -169,6 +173,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>

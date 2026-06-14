@@ -27,6 +27,10 @@
         hr { margin: 1rem 0; border: 0; height: 1px; background: var(--border-card); }
         @media (max-width: 640px) { .lesson-title { font-size: 1.5rem; } .grammar-title { font-size: 1.2rem; } .jp-text { font-size: 1rem; } }
     </style>
+    <!-- 动画库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 </head>
 <body>
 
@@ -55,7 +59,7 @@
     </div>
 
     <!-- 1. 名词Aは名词Bです -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ①</div>
         <div class="grammar-title">名词A + は + 名词B + です</div>
         <div class="pattern-box"><span class="jp-text">N1 は N2 です</span></div>
@@ -68,7 +72,7 @@
     </div>
 
     <!-- 2. 名词Aは名词Bじゃありません -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ②</div>
         <div class="grammar-title">名词A + は + 名词B + じゃありません / ではありません</div>
         <div class="pattern-box"><span class="jp-text">N1 は N2 じゃありません</span></div>
@@ -81,7 +85,7 @@
     </div>
 
     <!-- 3. 名词Aは名词Bですか -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ③</div>
         <div class="grammar-title">名词A + は + 名词B + ですか</div>
         <div class="pattern-box"><span class="jp-text">N1 は N2 ですか</span></div>
@@ -95,7 +99,7 @@
     </div>
 
     <!-- 4. 助词も -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ④</div>
         <div class="grammar-title">名词A + も + 名词B + です</div>
         <div class="pattern-box"><span class="jp-text">N1 も N2 です</span></div>
@@ -107,7 +111,7 @@
     </div>
 
     <!-- 5. 名词Aの名词B -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑤</div>
         <div class="grammar-title">名词A + の + 名词B</div>
         <div class="pattern-box"><span class="jp-text">N1 の N2</span></div>
@@ -118,7 +122,7 @@
     </div>
 
     <!-- 6. 称呼后缀 -->
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">文法 ⑥</div>
         <div class="grammar-title">～さん / ～ちゃん</div>
         <p><strong>意义</strong>：表达敬意或亲切的称呼后缀。</p>
@@ -129,7 +133,7 @@
         <div class="note">💡 不能加在自己名字后。「あなた」不礼貌，尽量少用。</div>
     </div>
 
-    <div class="grammar-card">
+    <div class="grammar-card" data-aos="fade-up">
         <div class="grammar-number">📌 第一課 キーワード</div>
         <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem;">
             <span class="badge">私 (わたし)</span><span class="badge">学生 (がくせい)</span>
@@ -177,6 +181,14 @@
                 nextLink.style.visibility = "hidden";
             }
         })();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
     </script>
 </body>
 </html>
