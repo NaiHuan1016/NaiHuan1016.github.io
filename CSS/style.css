@@ -199,7 +199,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
-    background-image: url('../IMAGE/bg.png');
+    background-image: url('../IMAGE/backgrounds/bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -962,5 +962,59 @@ body {
     .post-footer {
         flex-direction: column;
         text-align: center;
+    }
+}
+/* 课程导航样式 */
+.lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--border-card);
+    flex-wrap: wrap;
+}
+
+.prev-lesson,
+.next-lesson,
+.back-to-list {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 2rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.prev-lesson:hover,
+.next-lesson:hover,
+.back-to-list:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+    transform: translateX(-2px);
+}
+
+.next-lesson:hover {
+    transform: translateX(2px);
+}
+
+.back-to-list {
+    background: var(--primary-light);
+}
+
+@media (max-width: 640px) {
+    .lesson-nav {
+        justify-content: center;
+    }
+    .prev-lesson, .next-lesson, .back-to-list {
+        flex: 1;
+        justify-content: center;
     }
 }

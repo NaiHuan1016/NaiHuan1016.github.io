@@ -12,7 +12,7 @@
         { name: "Git 版本控制", icon: "🌿", desc: "协作流程、分支策略、提交规范与高级技巧。", tag: "版本管理", lastUpdate: "2025-05-10", link: "posts/git-guide.html" },
         { name: "Markdown 文档书写", icon: "📝", desc: "优雅排版、扩展语法、文档自动化与写作规范。", tag: "写作利器", lastUpdate: "2025-05-08", link: "posts/markdown-guide.html" },
         { name: "前端基础", icon: "🎨", desc: "HTML5/CSS3/JavaScript 核心概念与框架初探。", tag: "前端入门", lastUpdate: "2025-05-05", link: "posts/frontend-basic.html" },
-        { name: "日语学习", icon: "🗾", desc: "文法词汇、日常会话、JLPT备考与学习资源。", tag: "语言学习", lastUpdate: "2025-05-01", link: "posts/japanese/index.html" }
+        { name: "日语学习", icon: "🗾", desc: "文法词汇、日常会话、JLPT备考与学习资源。", tag: "语言学习", lastUpdate: "2025-05-01", link: "courses/japanese/index.html" }
     ];
 
     const goalsData = [
